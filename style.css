@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+
+}
+
+a {
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+ul > a, ul > img {
+    padding: 0 8px;
+}
+
+.header-img:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+    margin-top: 5vh;   
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+h1 {
+    font-family: Product Sans;
+    font-size: 5.5em;
+}
+
+.my-input-container {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;    
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+
+}
+
+.my-input-container > input {
+    flex-grow: 1;   
+    border: none;
+    outline: none; 
+}
+
+.my-input-container:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.my-button-container {
+    display: flex;
+    flex-direction: row;    
+    padding-top: 53px;
+}
+
+button {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: none;
+    min-width: 54px;
+    height: 36px;
+    padding: 0 20px;
+    margin: 0 4px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px gainsboro;
+    
+}
+
+footer {
+    background-color: #F2F2F2;
+    position: fixed;   
+    width: 100vw;
+    bottom: 0;  
+}
+
+#footer-left {
+    display: flex;
+    justify-content: flex-start;    
+    padding-left: 20px; 
+    align-items: center;
+}
+
+#footer-right {
+    display: flex;
+    justify-content: flex-end;  
+    margin-right: 20px;
+    align-items: center;
+}
+
+@media (max-width: 630px) {
+
+    #footer-nav {
+        flex-direction: column;
+    }
+
+    #footer-left {
+        justify-content: center;
+    }
+
+    #footer-right {
+        justify-content: center;
+    }
+
+    #my-input-container {
+        width: 95vw;
+    }
+
+
+}
+
+@media (max-height: 522px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        margin-bottom: 20px;
+
+    }
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-height: 570px) and (max-width: 630px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        margin-bottom: 13px;
+
+    }
+    footer {
+        position: relative;
+    }
+    
+}
